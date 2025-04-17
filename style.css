@@ -1,0 +1,22 @@
+body{
+    background-color: bisque;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.container .div {
+    display: flex;
+    justify-content: center;
+}    
+
+.container button{
+    width: 140px;
+    flex: 1;
+}
+.container img {
+    width:  50px;
+}
