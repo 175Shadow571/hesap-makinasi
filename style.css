@@ -1,54 +1,53 @@
 body{
     background-color: rgb(119, 119, 119);
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    height: 96vh;
-    align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   height: 97vh;
 }
 h1{
-    font-size: 2rem;
+    font-size: 70px;
+    margin: 0;
+    font-weight: 900;
+
+}
+.inputText{
+    margin: 0;
 }
 .inputText input{
-    display: flex;
-    width: 82vw;
-    height: 10vh;
+    width: 95vw;
+    height: 100px;
     border: 0;
-    background-color: rgb(223, 216, 216);
-
+    background-color: rgb(119, 119, 119);
+    font-size: 60px;
+    outline: none;
+    color: black;
 }
 .container {
     display: flex;
+    justify-content: center;
     margin-top: 8px;
-    height: 85%;
-    gap: 8px;
 }
-.container .div {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    gap: 8px;
-    }    
 
 .container button{
-    flex: 1;
+    width: 22vw;
+    height: 10vh;
+    margin: 4px;
     font-size: 100%;
     border: 0;
 
 }
 .buAslindaYok{visibility: hidden;}
 .container img {
-    width: 50px;
-    height: 37px;
-    margin: 21.240px 0;
+    height:  50%;
     object-fit: contain;
-    color: aqua;
+    pointer-events: none;
 }
 .btn-resim{
     background-color: bisque;
 
 }
 .btn-sayi{
-    background-color: rgb(223, 216, 216);
+    background-color: rgb(240, 232, 232);
 
 }
