@@ -1,47 +1,39 @@
 body{
     background-color: rgb(119, 119, 119);
-    min-width: 440px;
-    min-height: 600px;
-}
-.inputText {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    height: 125px;
-    
+    justify-content: end;
+    height: 96vh;
+    align-items: center;
+}
+h1{
+    font-size: 2rem;
 }
 .inputText input{
     display: flex;
-    width: 59.5%;
-    flex:1;
-    margin-top: 40px;
-    border-radius: 15px;
+    width: 82vw;
+    height: 10vh;
     border: 0;
-    background-color: rgb(160, 158, 158);
+    background-color: rgb(223, 216, 216);
 
 }
 .container {
     display: flex;
-    justify-content: center;
-    height: 70vh;
-    margin-bottom: 32px;
-    margin-top: 16px;
+    margin-top: 8px;
+    height: 85%;
     gap: 8px;
 }
 .container .div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 15%;
+    width: 20vw;
     gap: 8px;
     }    
 
 .container button{
     flex: 1;
     font-size: 100%;
-    border-radius: 100%;
     border: 0;
-    background-color: rgb(160, 158, 158);
 
 }
 .buAslindaYok{visibility: hidden;}
@@ -50,11 +42,13 @@ body{
     height: 37px;
     margin: 21.240px 0;
     object-fit: contain;
+    color: aqua;
 }
 .btn-resim{
-    color: aqua;
+    background-color: bisque;
 
 }
 .btn-sayi{
+    background-color: rgb(223, 216, 216);
 
 }
