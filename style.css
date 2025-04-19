@@ -3,7 +3,10 @@ body{
    display: flex;
    flex-direction: column;
    justify-content: end;
-   height: 97vh;
+   height: 88vh;
+}
+button:disabled{
+    color: black;
 }
 h1{
     font-size: 70px;
@@ -16,10 +19,10 @@ h1{
 }
 .inputText input{
     width: 95vw;
-    height: 100px;
+    height: 15vh;
     border: 0;
     background-color: rgb(119, 119, 119);
-    font-size: 12vh;
+    font-size: 8vh;
     outline: none;
     color: black;
 }
