@@ -9,10 +9,8 @@ button:disabled{
     color: black;
 }
 h1{
-    font-size: 70px;
+    font-size: 60px;
     margin: 0;
-    font-weight: 900;
-
 }
 .inputText{
     margin: 0;

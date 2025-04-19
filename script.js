@@ -2,12 +2,6 @@ let input = document.querySelector("#input")
 let buttons = document.querySelectorAll(".btn-sayi")
 let buttonsResim = document.querySelectorAll(".btn-resim")
 let nokta = document.querySelector("#nokta")
-let inputSonuc = document.querySelector("#inputSonuc")
-
-
-
-
-
 
 
 
@@ -45,23 +39,22 @@ buttonsResim.forEach(function(veri) {
 
 
 function Hesapla(yazi){
-
     const sonuc = yazi.split("").reduce((sonuc,veri) =>{
-     if(veri == "＋"){
+        if(veri == "＋"){
             let [sayi, sayi2]  = yazi.split("＋").slice()
-            return  parseFloat(sayi) + parseFloat(sayi2)
+            return  Topla(parseFloat(sayi),parseFloat(sayi2))
         }else if(veri == "－"){
             let [sayi, sayi2]  = yazi.split("－").slice()
-            return  parseFloat(sayi) - parseFloat(sayi2)
+            return Cikar(parseFloat(sayi),parseFloat(sayi2))
         }else if(veri == "X"){
             let [sayi, sayi2]  = yazi.split("X").slice()
-            return  parseFloat(sayi) * parseFloat(sayi2)
+            return  Carp(parseFloat(sayi),parseFloat(sayi2))
         }else if(veri == "÷"){
             let [sayi, sayi2]  = yazi.split("÷").slice()
-            return  parseFloat(sayi) / parseFloat(sayi2)
+            return  Bol(parseFloat(sayi),parseFloat(sayi2))
         }else if(veri == "%"){
             let [sayi, sayi2]  = yazi.split("%").slice()
-            return  parseFloat(sayi) % parseFloat(sayi2)
+            return  Kalan(parseFloat(sayi),parseFloat(sayi2))
         }
         return sonuc
         
@@ -71,26 +64,20 @@ function Hesapla(yazi){
 
 
 function Topla(sayi1,sayi2){
-
+    return sayi1 + sayi2
 }
 function Cikar(sayi1,sayi2){
-
+    return sayi1 - sayi2
 }
 function Carp(sayi1, sayi2){
-
+    return sayi1 * sayi2
 }
 function Bol(sayi1,sayi2){
-
+    return sayi1 / sayi2
 }
 function Kalan(sayi1, sayi2){
-
+    return sayi1 % sayi2
 }
-
-
-
-
-
-
 
 function NoktaVarmi(yazi){
     let tersVeri = yazi.split("").reverse().join("")
@@ -107,7 +94,7 @@ function SayiVarmi(yazi){
     let tersVeri = yazi.split("").reverse().join("")
     let ayrilmisVeri = tersVeri.split(/[%\÷\X\－\＋]/)[0]
     
-    if(/[0-9]/.test(ayrilmisVeri)){
+    if(/[0-9]/.test(ayrilmisVeri) && !/[%\÷\X\－\＋]/.test(tersVeri)){
        return true
     }else{
         return false
